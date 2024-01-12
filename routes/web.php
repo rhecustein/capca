@@ -24,6 +24,8 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('capca')->name('capca.')->group(function() {
         Route::get('list', [CapcaController::class, 'index'])->name('index');
+        Route::get('hasil', [CapcaController::class, 'hasil'])->name('hasil');
+        Route::get('presentase', [CapcaController::class, 'presentase'])->name('presentase');
     });
 });
 

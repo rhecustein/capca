@@ -427,59 +427,7 @@
                                                 <div class="py-3 px-7 pb-0">
                                                     <h5 class="mb-0 fs-5 fw-semibold">User Profile</h5>
                                                 </div>
-                                                <div class="d-flex align-items-center py-9 mx-7 border-bottom">
-                                                    <img src="../assets/images/profile/user-1.jpg"
-                                                        class="rounded-circle" width="80" height="80"
-                                                        alt="" />
-                                                    <div class="ms-3">
-                                                        <h5 class="mb-1 fs-3">Mathew Anderson</h5>
-                                                        <span class="mb-1 d-block">Designer</span>
-                                                        <p class="mb-0 d-flex align-items-center gap-2">
-                                                            <i class="ti ti-mail fs-4"></i> info@modernize.com
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-body">
-                                                    <a href="../horizontal/page-user-profile.html"
-                                                        class="py-8 px-7 mt-8 d-flex align-items-center">
-                                                        <span
-                                                            class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                            <img src="../assets/images/svgs/icon-account.svg"
-                                                                alt="" width="24" height="24" />
-                                                        </span>
-                                                        <div class="w-75 d-inline-block v-middle ps-3">
-                                                            <h6 class="mb-1 fs-3 fw-semibold lh-base">My Profile</h6>
-                                                            <span class="fs-2 d-block text-body-secondary">Account
-                                                                Settings</span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="../horizontal/app-email.html"
-                                                        class="py-8 px-7 d-flex align-items-center">
-                                                        <span
-                                                            class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                            <img src="../assets/images/svgs/icon-inbox.svg"
-                                                                alt="" width="24" height="24" />
-                                                        </span>
-                                                        <div class="w-75 d-inline-block v-middle ps-3">
-                                                            <h6 class="mb-1 fs-3 fw-semibold lh-base">My Inbox</h6>
-                                                            <span class="fs-2 d-block text-body-secondary">Messages &
-                                                                Emails</span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="../horizontal/app-notes.html"
-                                                        class="py-8 px-7 d-flex align-items-center">
-                                                        <span
-                                                            class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                            <img src="../assets/images/svgs/icon-tasks.svg"
-                                                                alt="" width="24" height="24" />
-                                                        </span>
-                                                        <div class="w-75 d-inline-block v-middle ps-3">
-                                                            <h6 class="mb-1 fs-3 fw-semibold lh-base">My Task</h6>
-                                                            <span class="fs-2 d-block text-body-secondary">To-do and
-                                                                Daily Tasks</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
+                                            
                                                 <div class="d-grid py-4 px-7 pt-8">
                                                     <div
                                                         class="upgrade-plan bg-primary-subtle position-relative overflow-hidden rounded-4 p-4 mb-9">
@@ -497,8 +445,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <a href="../horizontal/authentication-login.html"
-                                                        class="btn btn-outline-primary">Log Out</a>
+                                                    <a href="../horizontal/authentication-login.html" class="btn btn-outline-primary">Log Out</a>
                                                 </div>
                                             </div>
 
@@ -711,6 +658,9 @@
                             <!-- ------------------------------- -->
                             <!-- start apps Dropdown -->
                             <!-- ------------------------------- -->
+                            <li class="nav-item dropdown-hover d-none d-lg-block">
+                                <a class="nav-link" href="{{ route('capca.index')}}">Capca</a>
+                              </li>
                             <li class="nav-item dropdown hover-dd d-none d-lg-block">
                                 <a class="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown">
                                     Report<span class="mt-1"><i class="ti ti-chevron-down fs-3"></i></span>
@@ -723,7 +673,7 @@
                                                     <div class="row">
                                                         <div class="col-6">
                                                             <div class="position-relative">
-                                                                <a href="../horizontal/app-chat.html"
+                                                                <a href="{{ route('capca.hasil')}}"
                                                                     class="d-flex align-items-center pb-9 position-relative">
                                                                     <div
                                                                         class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
@@ -741,7 +691,7 @@
                                                                         </span>
                                                                     </div>
                                                                 </a>
-                                                                <a href="../horizontal/app-chat.html"
+                                                                <a href="{{ route('capca.presentase')}}"
                                                                     class="d-flex align-items-center pb-9 position-relative">
                                                                     <div
                                                                         class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
@@ -751,11 +701,11 @@
                                                                     </div>
                                                                     <div class="d-inline-block">
                                                                         <h6 class="mb-1 fw-semibold fs-3">
-                                                                            Hasil Identify
+                                                                           Persentase
                                                                         </h6>
                                                                         <span
                                                                             class="fs-2 d-block text-body-secondary">
-                                                                            Hasil Capca sudha di Identify
+                                                                           Persetase Hasil Identify
                                                                         </span>
                                                                     </div>
                                                                 </a>
@@ -811,11 +761,8 @@
                                         </a>
                                         <div class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up"
                                             aria-labelledby="drop1">
-                                            <div class="profile-dropdown position-relative" data-simplebar>
-                                                <div class="py-3 px-7 pb-0">
-                                                    <h5 class="mb-0 fs-5 fw-semibold">Logout</h5>
-                                                </div>
-                                               
+                                            <div class="d-grid py-4 px-7 pt-8">
+                                                <a href="../horizontal/authentication-login.html" class="btn btn-outline-primary">Log Out</a>
                                             </div>
                                         </div>
                                     </li>
@@ -836,146 +783,6 @@
                 </div>
             </div>
         </div>
-
-        <!--  Search Bar -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                <div class="modal-content rounded-1">
-                    <div class="modal-header border-bottom">
-                        <input type="search" class="form-control fs-3" placeholder="Search here"
-                            id="search" />
-                        <a href="javascript:void(0)" data-bs-dismiss="modal" class="lh-1">
-                            <i class="ti ti-x fs-5 ms-3"></i>
-                        </a>
-                    </div>
-                    <div class="modal-body message-body" data-simplebar="">
-                        <h5 class="mb-0 fs-5 p-1">Quick Page Links</h5>
-                        <ul class="list mb-0 py-2">
-                            <li class="p-1 mb-1 bg-hover-light-black">
-                                <a href="#">
-                                    <span class="fs-3 text-dark fw-normal d-block">Modern</span>
-                                    <span class="fs-3 text-muted d-block">/dashboards/dashboard1</span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--  Shopping Cart -->
-        <div class="offcanvas offcanvas-end shopping-cart" tabindex="-1" id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header py-4">
-                <h5 class="offcanvas-title fs-5 fw-semibold" id="offcanvasRightLabel">
-                    Shopping Cart
-                </h5>
-                <span class="badge bg-primary rounded-4 px-3 py-1 lh-sm">5 new</span>
-            </div>
-            <div class="offcanvas-body h-100 px-4 pt-0" data-simplebar>
-                <ul class="mb-0">
-                    <li class="pb-7">
-                        <div class="d-flex align-items-center">
-                            <img src="../assets/images/products/product-1.jpg" width="95" height="75"
-                                class="rounded-1 me-9 flex-shrink-0" alt="" />
-                            <div>
-                                <h6 class="mb-1">Supreme toys cooker</h6>
-                                <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
-                                <div class="d-flex align-items-center justify-content-between mt-2">
-                                    <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
-                                    <div class="input-group input-group-sm w-50">
-                                        <button class="btn border-0 round-20 minus p-0 bg-success-subtle text-success"
-                                            type="button" id="add1">
-                                            -
-                                        </button>
-                                        <input type="text"
-                                            class="form-control round-20 bg-transparent text-muted fs-2 border-0 text-center qty"
-                                            placeholder="" aria-label="Example text with button addon"
-                                            aria-describedby="add1" value="1" />
-                                        <button class="btn text-success bg-success-subtle p-0 round-20 border-0 add"
-                                            type="button" id="addo2">
-                                            +
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="pb-7">
-                        <div class="d-flex align-items-center">
-                            <img src="../assets/images/products/product-2.jpg" width="95" height="75"
-                                class="rounded-1 me-9 flex-shrink-0" alt="" />
-                            <div>
-                                <h6 class="mb-1">Supreme toys cooker</h6>
-                                <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
-                                <div class="d-flex align-items-center justify-content-between mt-2">
-                                    <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
-                                    <div class="input-group input-group-sm w-50">
-                                        <button class="btn border-0 round-20 minus p-0 bg-success-subtle text-success"
-                                            type="button" id="add2">
-                                            -
-                                        </button>
-                                        <input type="text"
-                                            class="form-control round-20 bg-transparent text-muted fs-2 border-0 text-center qty"
-                                            placeholder="" aria-label="Example text with button addon"
-                                            aria-describedby="add2" value="1" />
-                                        <button class="btn text-success bg-success-subtle p-0 round-20 border-0 add"
-                                            type="button" id="addon34">
-                                            +
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="pb-7">
-                        <div class="d-flex align-items-center">
-                            <img src="../assets/images/products/product-3.jpg" width="95" height="75"
-                                class="rounded-1 me-9 flex-shrink-0" alt="" />
-                            <div>
-                                <h6 class="mb-1">Supreme toys cooker</h6>
-                                <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
-                                <div class="d-flex align-items-center justify-content-between mt-2">
-                                    <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
-                                    <div class="input-group input-group-sm w-50">
-                                        <button class="btn border-0 round-20 minus p-0 bg-success-subtle text-success"
-                                            type="button" id="add3">
-                                            -
-                                        </button>
-                                        <input type="text"
-                                            class="form-control round-20 bg-transparent text-muted fs-2 border-0 text-center qty"
-                                            placeholder="" aria-label="Example text with button addon"
-                                            aria-describedby="add3" value="1" />
-                                        <button class="btn text-success bg-success-subtle p-0 round-20 border-0 add"
-                                            type="button" id="addon3">
-                                            +
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="align-bottom">
-                    <div class="d-flex align-items-center pb-7">
-                        <span class="text-dark fs-3">Sub Total</span>
-                        <div class="ms-auto">
-                            <span class="text-dark fw-semibold fs-3">$2530</span>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center pb-7">
-                        <span class="text-dark fs-3">Total</span>
-                        <div class="ms-auto">
-                            <span class="text-dark fw-semibold fs-3">$6830</span>
-                        </div>
-                    </div>
-                    <a href="../horizontal/eco-checkout.html" class="btn btn-outline-primary w-100">Go to shopping
-                        cart</a>
-                </div>
-            </div>
-        </div>
-
     </div>
     <div class="dark-transparent sidebartoggler"></div>
     <!-- Import Js Files -->

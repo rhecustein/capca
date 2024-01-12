@@ -15,6 +15,16 @@ class CapcaController extends Controller
         return view('capca.index');
     }
 
+    public function hasil()
+    {
+        return view('capca.hasil');
+    }
+
+    public function presentase()
+    {
+        return view('capca.presentase');
+    }
+
     /**
      * Store a newly created resource in storage.
      */
